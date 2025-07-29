@@ -325,7 +325,13 @@ table.insert(shade2,Holder)
 Title.Name = "Title"
 Title.Parent = Holder
 Title.Active = true
-Title.BackgroundColor3 = Color3.fromRGB(36,36,37)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Title.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
@@ -368,7 +374,13 @@ table.insert(text1,Title)
 Dark.Name = "Dark"
 Dark.Parent = Holder
 Dark.Active = true
-Dark.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Dark.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Dark.BorderSizePixel = 0
 Dark.Position = UDim2.new(0, 0, 0, 45)
 Dark.Size = UDim2.new(0, 250, 0, 175)
@@ -427,7 +439,13 @@ ReferenceButton.ZIndex = 10
 Settings.Name = "Settings"
 Settings.Parent = Holder
 Settings.Active = true
-Settings.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Settings.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Settings.BorderSizePixel = 0
 Settings.Position = UDim2.new(0, 0, 0, 220)
 Settings.Size = UDim2.new(0, 250, 0, 175)
@@ -452,7 +470,13 @@ table.insert(scroll,SettingsHolder)
 
 Prefix.Name = "Prefix"
 Prefix.Parent = SettingsHolder
-Prefix.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Prefix.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Prefix.BorderSizePixel = 0
 Prefix.BackgroundTransparency = 1
 Prefix.Position = UDim2.new(0, 5, 0, 5)
@@ -468,7 +492,13 @@ table.insert(text1,Prefix)
 
 PrefixBox.Name = "PrefixBox"
 PrefixBox.Parent = Prefix
-PrefixBox.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		PrefixBox.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 PrefixBox.BorderSizePixel = 0
 PrefixBox.Position = UDim2.new(1, -20, 0, 0)
 PrefixBox.Size = UDim2.new(0, 20, 0, 20)
@@ -538,7 +568,13 @@ Aliases.Parent = SettingsHolder
 
 StayOpen.Name = "StayOpen"
 StayOpen.Parent = SettingsHolder
-StayOpen.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		StayOpen.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 StayOpen.BorderSizePixel = 0
 StayOpen.BackgroundTransparency = 1
 StayOpen.Position = UDim2.new(0, 5, 0, 30)
@@ -554,7 +590,13 @@ table.insert(text1,StayOpen)
 
 Button.Name = "Button"
 Button.Parent = StayOpen
-Button.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Button.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Button.BorderSizePixel = 0
 Button.Position = UDim2.new(1, -20, 0, 0)
 Button.Size = UDim2.new(0, 20, 0, 20)
@@ -563,7 +605,13 @@ table.insert(shade3,Button)
 
 On.Name = "On"
 On.Parent = Button
-On.BackgroundColor3 = Color3.fromRGB(150, 150, 151)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		On.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 On.BackgroundTransparency = 1
 On.BorderSizePixel = 0
 On.Position = UDim2.new(0, 2, 0, 2)
@@ -608,7 +656,13 @@ table.insert(text1,Example)
 
 Notification.Name = randomString()
 Notification.Parent = ScaledHolder
-Notification.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Notification.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Notification.BorderSizePixel = 0
 Notification.Position = UDim2.new(1, -500, 1, 20)
 Notification.Size = UDim2.new(0, 250, 0, 100)
@@ -617,7 +671,13 @@ table.insert(shade1,Notification)
 
 Title_2.Name = "Title"
 Title_2.Parent = Notification
-Title_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Title_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Title_2.BorderSizePixel = 0
 Title_2.Size = UDim2.new(0, 250, 0, 20)
 Title_2.Font = Enum.Font.SourceSans
@@ -651,7 +711,13 @@ CloseButton.Text = ""
 CloseButton.ZIndex = 10
 
 CloseImage.Parent = CloseButton
-CloseImage.BackgroundColor3 = Color3.new(1, 1, 1)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		CloseImage.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 CloseImage.BackgroundTransparency = 1
 CloseImage.Position = UDim2.new(0, 5, 0, 5)
 CloseImage.Size = UDim2.new(0, 10, 0, 10)
@@ -666,7 +732,13 @@ PinButton.ZIndex = 10
 PinButton.Text = ""
 
 PinImage.Parent = PinButton
-PinImage.BackgroundColor3 = Color3.new(1, 1, 1)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		PinImage.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 PinImage.BackgroundTransparency = 1
 PinImage.Position = UDim2.new(0, 3, 0, 3)
 PinImage.Size = UDim2.new(0, 14, 0, 14)
@@ -676,7 +748,13 @@ PinImage.Image = getcustomasset("infiniteyield/assets/pin.png")
 Tooltip.Name = randomString()
 Tooltip.Parent = ScaledHolder
 Tooltip.Active = true
-Tooltip.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Tooltip.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Tooltip.BackgroundTransparency = 0.1
 Tooltip.BorderSizePixel = 0
 Tooltip.Size = UDim2.new(0, 200, 0, 96)
@@ -686,7 +764,13 @@ table.insert(shade1,Tooltip)
 
 Title_3.Name = "Title"
 Title_3.Parent = Tooltip
-Title_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Title_3.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Title_3.BackgroundTransparency = 0.1
 Title_3.BorderSizePixel = 0
 Title_3.Size = UDim2.new(0, 200, 0, 20)
@@ -717,7 +801,13 @@ table.insert(text1,Description)
 IntroBackground.Name = "IntroBackground"
 IntroBackground.Parent = Holder
 IntroBackground.Active = true
-IntroBackground.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		IntroBackground.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 IntroBackground.BorderSizePixel = 0
 IntroBackground.Position = UDim2.new(0, 0, 0, 45)
 IntroBackground.Size = UDim2.new(0, 250, 0, 175)
@@ -748,7 +838,13 @@ Credits.ZIndex = 10
 KeybindsFrame.Name = "KeybindsFrame"
 KeybindsFrame.Parent = Settings
 KeybindsFrame.Active = true
-KeybindsFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		KeybindsFrame.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 KeybindsFrame.BorderSizePixel = 0
 KeybindsFrame.Position = UDim2.new(0, 0, 0, 175)
 KeybindsFrame.Size = UDim2.new(0, 250, 0, 175)
@@ -757,7 +853,13 @@ table.insert(shade1,KeybindsFrame)
 
 Close.Name = "Close"
 Close.Parent = KeybindsFrame
-Close.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Close.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Close.BorderSizePixel = 0
 Close.Position = UDim2.new(0, 205, 0, 150)
 Close.Size = UDim2.new(0, 40, 0, 20)
@@ -771,7 +873,13 @@ table.insert(text1,Close)
 
 Add.Name = "Add"
 Add.Parent = KeybindsFrame
-Add.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Add.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Add.BorderSizePixel = 0
 Add.Position = UDim2.new(0, 5, 0, 150)
 Add.Size = UDim2.new(0, 40, 0, 20)
@@ -785,7 +893,13 @@ table.insert(text1,Add)
 
 Delete.Name = "Delete"
 Delete.Parent = KeybindsFrame
-Delete.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Delete.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Delete.BorderSizePixel = 0
 Delete.Position = UDim2.new(0, 50, 0, 150)
 Delete.Size = UDim2.new(0, 40, 0, 20)
@@ -814,7 +928,13 @@ Holder_2.ZIndex = 10
 
 Example_2.Name = "Example"
 Example_2.Parent = KeybindsFrame
-Example_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Example_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Example_2.BorderSizePixel = 0
 Example_2.Size = UDim2.new(0, 10, 0, 20)
 Example_2.Visible = false
@@ -823,7 +943,13 @@ table.insert(shade2,Example_2)
 
 Text_3.Name = "Text"
 Text_3.Parent = Example_2
-Text_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Text_3.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Text_3.BorderSizePixel = 0
 Text_3.Position = UDim2.new(0, 10, 0, 0)
 Text_3.Size = UDim2.new(0, 240, 0, 20)
@@ -838,7 +964,13 @@ table.insert(text1,Text_3)
 
 Delete_2.Name = "Delete"
 Delete_2.Parent = Text_3
-Delete_2.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Delete_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Delete_2.BorderSizePixel = 0
 Delete_2.Position = UDim2.new(0, 200, 0, 0)
 Delete_2.Size = UDim2.new(0, 40, 0, 20)
@@ -861,7 +993,13 @@ KeybindEditor.ZIndex = 10
 background_2.Name = "background"
 background_2.Parent = KeybindEditor
 background_2.Active = true
-background_2.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		background_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 background_2.BorderSizePixel = 0
 background_2.Position = UDim2.new(0, 0, 0, 20)
 background_2.Size = UDim2.new(0, 360, 0, 185)
@@ -871,7 +1009,13 @@ table.insert(shade1,background_2)
 Dark_3.Name = "Dark"
 Dark_3.Parent = background_2
 Dark_3.Active = true
-Dark_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Dark_3.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Dark_3.BorderSizePixel = 0
 Dark_3.Position = UDim2.new(0, 135, 0, 0)
 Dark_3.Size = UDim2.new(0, 2, 0, 185)
@@ -895,7 +1039,13 @@ table.insert(text1,Directions)
 
 BindTo.Name = "BindTo"
 BindTo.Parent = background_2
-BindTo.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		BindTo.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 BindTo.BorderSizePixel = 0
 BindTo.Position = UDim2.new(0, 10, 0, 95)
 BindTo.Size = UDim2.new(0, 115, 0, 50)
@@ -922,7 +1072,13 @@ table.insert(text1,TriggerLabel)
 
 BindTriggerSelect.Name = "BindTo"
 BindTriggerSelect.Parent = background_2
-BindTriggerSelect.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		BindTriggerSelect.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 BindTriggerSelect.BorderSizePixel = 0
 BindTriggerSelect.Position = UDim2.new(0, 60, 0, 155)
 BindTriggerSelect.Size = UDim2.new(0, 65, 0, 20)
@@ -936,7 +1092,13 @@ table.insert(text1,BindTriggerSelect)
 
 Add_2.Name = "Add"
 Add_2.Parent = background_2
-Add_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Add_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Add_2.BorderSizePixel = 0
 Add_2.Position = UDim2.new(0, 310, 0, 35)
 Add_2.Size = UDim2.new(0, 40, 0, 20)
@@ -964,7 +1126,13 @@ table.insert(scroll,Toggles)
 
 ClickTP.Name = "Click TP (Hold Key & Click)"
 ClickTP.Parent = Toggles
-ClickTP.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		ClickTP.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 ClickTP.BorderSizePixel = 0
 ClickTP.Size = UDim2.new(0, 200, 0, 20)
 ClickTP.ZIndex = 10
@@ -978,7 +1146,13 @@ table.insert(text1,ClickTP)
 
 Select.Name = "Select"
 Select.Parent = ClickTP
-Select.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Select.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Select.BorderSizePixel = 0
 Select.Position = UDim2.new(0, 160, 0, 0)
 Select.Size = UDim2.new(0, 40, 0, 20)
@@ -992,7 +1166,13 @@ table.insert(text2,Select)
 
 ClickDelete.Name = "Click Delete (Hold Key & Click)"
 ClickDelete.Parent = Toggles
-ClickDelete.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		ClickDelete.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 ClickDelete.BorderSizePixel = 0
 ClickDelete.Position = UDim2.new(0, 0, 0, 25)
 ClickDelete.Size = UDim2.new(0, 200, 0, 20)
@@ -1007,7 +1187,13 @@ table.insert(text1,ClickDelete)
 
 Select_2.Name = "Select"
 Select_2.Parent = ClickDelete
-Select_2.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Select_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Select_2.BorderSizePixel = 0
 Select_2.Position = UDim2.new(0, 160, 0, 0)
 Select_2.Size = UDim2.new(0, 40, 0, 20)
@@ -1021,7 +1207,13 @@ table.insert(text2,Select_2)
 
 Cmdbar_2.Name = "Cmdbar_2"
 Cmdbar_2.Parent = background_2
-Cmdbar_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Cmdbar_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Cmdbar_2.BorderSizePixel = 0
 Cmdbar_2.Position = UDim2.new(0, 150, 0, 35)
 Cmdbar_2.Size = UDim2.new(0, 150, 0, 20)
@@ -1035,7 +1227,13 @@ Cmdbar_2.TextXAlignment = Enum.TextXAlignment.Left
 
 Cmdbar_3.Name = "Cmdbar_3"
 Cmdbar_3.Parent = background_2
-Cmdbar_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Cmdbar_3.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Cmdbar_3.BorderSizePixel = 0
 Cmdbar_3.Position = UDim2.new(0, 150, 0, 60)
 Cmdbar_3.Size = UDim2.new(0, 150, 0, 20)
@@ -1049,7 +1247,13 @@ Cmdbar_3.TextXAlignment = Enum.TextXAlignment.Left
 
 CreateToggle.Name = "CreateToggle"
 CreateToggle.Parent = background_2
-CreateToggle.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		CreateToggle.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 CreateToggle.BackgroundTransparency = 1
 CreateToggle.BorderSizePixel = 0
 CreateToggle.Position = UDim2.new(0, 152, 0, 10)
@@ -1064,7 +1268,13 @@ table.insert(text1,CreateToggle)
 
 Button_2.Name = "Button"
 Button_2.Parent = CreateToggle
-Button_2.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Button_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Button_2.BorderSizePixel = 0
 Button_2.Position = UDim2.new(1, -20, 0, 0)
 Button_2.Size = UDim2.new(0, 20, 0, 20)
@@ -1073,7 +1283,13 @@ table.insert(shade3,Button_2)
 
 On_2.Name = "On"
 On_2.Parent = Button_2
-On_2.BackgroundColor3 = Color3.fromRGB(150, 150, 151)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		On_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 On_2.BackgroundTransparency = 1
 On_2.BorderSizePixel = 0
 On_2.Position = UDim2.new(0, 2, 0, 2)
@@ -1086,7 +1302,13 @@ On_2.TextSize = 14.000
 
 shadow_2.Name = "shadow"
 shadow_2.Parent = KeybindEditor
-shadow_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		shadow_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 shadow_2.BorderSizePixel = 0
 shadow_2.Size = UDim2.new(0, 360, 0, 20)
 shadow_2.ZIndex = 10
@@ -1113,7 +1335,13 @@ Exit_2.ZIndex = 10
 Exit_2.Text = ""
 
 ExitImage_2.Parent = Exit_2
-ExitImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		ExitImage_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 ExitImage_2.BackgroundTransparency = 1
 ExitImage_2.Position = UDim2.new(0, 5, 0, 5)
 ExitImage_2.Size = UDim2.new(0, 10, 0, 10)
@@ -1123,7 +1351,13 @@ ExitImage_2.Image = getcustomasset("infiniteyield/assets/close.png")
 PositionsFrame.Name = "PositionsFrame"
 PositionsFrame.Parent = Settings
 PositionsFrame.Active = true
-PositionsFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		PositionsFrame.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 PositionsFrame.BorderSizePixel = 0
 PositionsFrame.Size = UDim2.new(0, 250, 0, 175)
 PositionsFrame.Position = UDim2.new(0, 0, 0, 175)
@@ -1132,7 +1366,13 @@ table.insert(shade1,PositionsFrame)
 
 Close_3.Name = "Close"
 Close_3.Parent = PositionsFrame
-Close_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Close_3.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Close_3.BorderSizePixel = 0
 Close_3.Position = UDim2.new(0, 205, 0, 150)
 Close_3.Size = UDim2.new(0, 40, 0, 20)
@@ -1146,7 +1386,13 @@ table.insert(text1,Close_3)
 
 Delete_5.Name = "Delete"
 Delete_5.Parent = PositionsFrame
-Delete_5.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Delete_5.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Delete_5.BorderSizePixel = 0
 Delete_5.Position = UDim2.new(0, 50, 0, 150)
 Delete_5.Size = UDim2.new(0, 40, 0, 20)
@@ -1160,7 +1406,13 @@ table.insert(text1,Delete_5)
 
 Part.Name = "PartGoto"
 Part.Parent = PositionsFrame
-Part.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Part.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Part.BorderSizePixel = 0
 Part.Position = UDim2.new(0, 5, 0, 150)
 Part.Size = UDim2.new(0, 40, 0, 20)
@@ -1190,7 +1442,13 @@ Holder_4.ZIndex = 10
 
 Example_4.Name = "Example"
 Example_4.Parent = PositionsFrame
-Example_4.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Example_4.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Example_4.BorderSizePixel = 0
 Example_4.Size = UDim2.new(0, 10, 0, 20)
 Example_4.Visible = false
@@ -1200,7 +1458,13 @@ table.insert(shade2,Example_4)
 
 Text_5.Name = "Text"
 Text_5.Parent = Example_4
-Text_5.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Text_5.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Text_5.BorderSizePixel = 0
 Text_5.Position = UDim2.new(0, 10, 0, 0)
 Text_5.Size = UDim2.new(0, 240, 0, 20)
@@ -1215,7 +1479,13 @@ table.insert(text1,Text_5)
 
 Delete_6.Name = "Delete"
 Delete_6.Parent = Text_5
-Delete_6.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Delete_6.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Delete_6.BorderSizePixel = 0
 Delete_6.Position = UDim2.new(0, 200, 0, 0)
 Delete_6.Size = UDim2.new(0, 40, 0, 20)
@@ -1229,7 +1499,13 @@ table.insert(text2,Delete_6)
 
 TP.Name = "TP"
 TP.Parent = Text_5
-TP.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		TP.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 TP.BorderSizePixel = 0
 TP.Position = UDim2.new(0, 155, 0, 0)
 TP.Size = UDim2.new(0, 40, 0, 20)
@@ -1244,7 +1520,13 @@ table.insert(text2,TP)
 AliasesFrame.Name = "AliasesFrame"
 AliasesFrame.Parent = Settings
 AliasesFrame.Active = true
-AliasesFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		AliasesFrame.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 AliasesFrame.BorderSizePixel = 0
 AliasesFrame.Position = UDim2.new(0, 0, 0, 175)
 AliasesFrame.Size = UDim2.new(0, 250, 0, 175)
@@ -1253,7 +1535,13 @@ table.insert(shade1,AliasesFrame)
 
 Close_2.Name = "Close"
 Close_2.Parent = AliasesFrame
-Close_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Close_2.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Close_2.BorderSizePixel = 0
 Close_2.Position = UDim2.new(0, 205, 0, 150)
 Close_2.Size = UDim2.new(0, 40, 0, 20)
@@ -1267,7 +1555,13 @@ table.insert(text1,Close_2)
 
 Delete_3.Name = "Delete"
 Delete_3.Parent = AliasesFrame
-Delete_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Delete_3.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Delete_3.BorderSizePixel = 0
 Delete_3.Position = UDim2.new(0, 5, 0, 150)
 Delete_3.Size = UDim2.new(0, 40, 0, 20)
@@ -1296,7 +1590,13 @@ Holder_3.ZIndex = 10
 
 Example_3.Name = "Example"
 Example_3.Parent = AliasesFrame
-Example_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Example_3.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Example_3.BorderSizePixel = 0
 Example_3.Size = UDim2.new(0, 10, 0, 20)
 Example_3.Visible = false
@@ -1305,7 +1605,13 @@ table.insert(shade2,Example_3)
 
 Text_4.Name = "Text"
 Text_4.Parent = Example_3
-Text_4.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Text_4.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Text_4.BorderSizePixel = 0
 Text_4.Position = UDim2.new(0, 10, 0, 0)
 Text_4.Size = UDim2.new(0, 240, 0, 20)
@@ -1320,7 +1626,13 @@ table.insert(text1,Text_4)
 
 Delete_4.Name = "Delete"
 Delete_4.Parent = Text_4
-Delete_4.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
+task.spawn(function()
+	local counter = 0
+	while wait(0.1) do
+		Delete_4.BackgroundColor3 = Color3.fromHSV(math.acos(math.cos(counter*math.pi))/math.pi, 1, 1)
+		counter += 0.01
+	end
+end)
 Delete_4.BorderSizePixel = 0
 Delete_4.Position = UDim2.new(0, 200, 0, 0)
 Delete_4.Size = UDim2.new(0, 40, 0, 20)
