@@ -10430,13 +10430,19 @@ addcmd('speed',{'ws','walkspeed'},function(args, speaker)
 	if args[2] then
 		local speed = args[2] or 16
 		if isNumber(speed) then
-			speaker.Character:FindFirstChildOfClass('Humanoid').WalkSpeed = speed
+			ws = speed
 		end
 	else
 		local speed = args[1] or 16
 		if isNumber(speed) then
-			speaker.Character:FindFirstChildOfClass('Humanoid').WalkSpeed = speed
+			ws = speed
 		end
+	end
+end)
+
+task.spawn(function()
+	while task.wait() do
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
 	end
 end)
 
