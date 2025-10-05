@@ -10433,11 +10433,13 @@ addcmd('speed',{'ws','walkspeed'},function(args, speaker)
 		local speed = args[2] or 16
 		if isNumber(speed) then
 			ws = speed
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
 		end
 	else
 		local speed = args[1] or 16
 		if isNumber(speed) then
 			ws = speed
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
 		end
 	end
 end)
